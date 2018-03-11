@@ -1,0 +1,96 @@
+<div class="margintop30px"></div>
+
+<h2><a href="/"><img src="/logo.png"></a></h2>
+<div class="margintop20px"></div>
+
+<div class="sign_up_form_container">
+  <h2>新規登録</h2>
+  
+  <div class="steps">
+    <div class="step1">
+      <span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x step now"></i>
+					<i class="fa fa-inverse fa-stack-1x">1</i>
+			</span>
+			登録内容を入力
+		</div>
+    <div class="step2">
+      <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x step"></i>
+				<i class="fa fa-inverse fa-stack-1x">2</i>
+			</span>
+			確認メールを送信
+    </div>
+    <div class="step3">
+      <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x step"></i>
+				<i class="fa fa-inverse fa-stack-1x">3</i>
+			</span>
+			登録完了
+    </div>
+  </div>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    
+    <div class="sub_container1">
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :postal_code %>
+        <%= f.text_field :postal_code %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :phone_number %>
+        <%= f.text_field :phone_number %>
+      </div>
+    </div>
+  
+    <div class="sub_container2">
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+      </div>
+    
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+          <span>(<%= @minimum_password_length %>文字以上)</span>
+        <% end %>
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+    
+      <div class="field">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+    
+      <div class="actions">
+        <%= f.submit "登録確認メールを送る" %>
+      </div>
+      </div>
+
+  <% end %>
+  <%= render "devise/shared/links" %>
+</div>
+
+<!--郵便番号から住所を取得-->
+<script>
+  $(document).on ('turbolinks:load', function(){
+  　$("#address_zipcode").jpostal({
+　  　postcode : [ "#user_postal_code" ],
+　　  address : {
+　　    "#user_address" : "%3%4%5%6%7"
+　　　}
+　  });
+  });
+</script>

@@ -1,0 +1,18 @@
+ja:
+    activerecord:
+        models:
+            user: ユーザ
+        attributes:
+            user:
+                id: ユーザID
+                name: お名前
+                email: メールアドレス
+                phone_number: 電話番号
+                postal_code: 郵便番号
+                address: 住所
+                password: パスワード
+                created_at: 登録日時
+                updated_at: 更新日時
+                password_confirmation: パスワード（確認用）
+                current_password: 現在のパスワード
+                remember_me: ログインしたままにする

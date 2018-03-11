@@ -1,0 +1,116 @@
+.steps {
+  margin: 2em auto;
+  width: 720px;
+  .step1, 
+  .step2, 
+  .step3 {
+    display: inline-block;
+    padding: 0 2em 0 0;
+    text-align: left;
+    span {
+      font-size: 2.5em;
+      .step {
+        color: #43a047;
+        opacity: .4;
+      }
+      .now {
+        opacity: 1;
+      }
+    }
+  } 
+}
+
+.sign_up_form_container {
+  #new_user {
+    width: 720px;
+    #error_explanation {
+      h2 {
+        background: pink;
+        font-size: 1.5em;
+        padding: .8em 3em;
+        text-align: left;
+      }
+      ul {
+        background: pink;
+        margin: 0 0 2em;
+        padding: 0 5em 1em;
+        text-align: left;
+      }
+    }
+    .sub_container1,
+    .sub_container2 {
+      display: inline-block;
+      padding: 2em 0;
+      vertical-align: top;
+      width: 48%;
+    }
+    .sub_container1 .field {
+      padding: 0 1.5em 0 3em;
+    }
+    .sub_container2 .field,
+    .sub_container2 .actions {
+      padding: 0 3em 0 1.5em;
+    }
+  }
+}
+.sign_in_form_container {
+  #new_user {
+    padding: 2em 0 0 0;
+    width: 400px;
+  }
+}
+
+.sign_up_form_container,
+.sign_in_form_container {
+  img {
+    margin: 1em auto;
+  }
+  #new_user {
+    margin: 1em auto;
+    .field {
+      padding: 0 3em;
+      text-align: left;
+      .field_with_errors:first-child {
+        display: inline;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        background: #f2f2f2;
+        border: 0;
+        font-size: 1em;
+        height: 3em;
+        margin: .5em 0 1em;
+        padding: .7em;
+        width: 100%;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      input[type="checkbox"]:focus {
+        box-shadow: 0 0 5px #76b852;
+        outline: solid 2px #76b852;
+      }
+    }
+    .actions {
+      padding: 0 3em;
+      input[type="submit"] {
+        background: #4caf50;
+        border: 0;
+        font-size: 1em;
+        font-weight: bold;
+        margin: 2em 0;
+        padding: .8em 0;
+        width: 100%;
+      }
+      input[type="submit"]:hover,
+      input[type="submit"]:active {
+        background: #43a047;
+      }
+      input[type="submit"]:focus {
+        box-shadow: 0 0 5px #76b852;
+        outline: solid 2px #76b852;
+      }
+    }
+  }
+}

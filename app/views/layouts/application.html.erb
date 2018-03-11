@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kampai</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <%= favicon_link_tag('/favicon.ico') %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <link rel="stylesheet" type="text/css" href="/slick.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/slick-theme.css" media="screen" />
+
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/slick.min.js"></script>
+
+<body>
+<p class="notice"><%=notice%></p>
+<p class="alert"><%=alert%></p>
+<!--ログイン時-->
+<% if user_signed_in? %>
+  <header class="main_header">
+      <div class="row1">
+       <div class="content"> 
+          <a class="logo" href="/">Kampai</a>
+          <div class="mobile-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+  
+          <nav>
+              <ul>
+                  <li><a href="/news">NEWS</a></li>
+                  <li><a href="/items/index">取り扱い商品一覧</a></li>
+                  <li><a href="/carts/show">カート</a></li>
+                  <li><a href="/mypage">マイページ</a></li>
+                  <li><a href="/users/sign_out" data-method="delete">ログアウト</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div> <!-- END row -->
+  </header>
+
+<!--ログアウト時-->
+<% else %>
+  <header class="main_header">
+  
+      <div class="row1">
+       <div class="content">
+          <a class="logo" href="/">Kampai</a>
+  
+          <div class="mobile-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+  
+          <nav>
+              <ul>
+                  <li><a href="/news">NEWS</a></li>
+                  <li><a href="/items/index">取り扱い商品一覧</a></li>
+                  <li><a href="/users/sign_up">新規登録</a></li>
+                  <li><a href="/users/sign_in">ログイン</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div> <!-- END row -->
+  
+  </header>
+<% end %>
+
+<!--共通ファーストビューレイアウト-->
+<div class="sections">
+  
+  <section id="hero">
+  
+    <div class="mouse">
+        <span></span>
+    </div>
+
+  </section>
+  <script>
+    $(window).scroll(function() {
+
+    if ($(window).scrollTop() > 100) {
+        $('.main_header').addClass('sticky');
+    } else {
+        $('.main_header').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_header').hasClass('open-nav')) {
+        $('.main_header').removeClass('open-nav');
+    } else {
+        $('.main_header').addClass('open-nav');
+    }
+});
+
+$('.main_header li a').click(function() {
+    if ($('.main_header').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_header').removeClass('open-nav');
+    }
+});
+
+// navigation scroll
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 0;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+/* Scroll-to-Top Button */
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+    } else {
+        $('.scrollup').fadeOut();
+    }
+});
+
+$('.scrollup').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+/* WORK IN PROGRESS
+   NAVIGATION ACTIVE STATE IN SECTION AREA
+*/
+var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
+ 
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+ 
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
+ 
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+ 
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
+  </script>
+
+  <%= yield %>
+  
+<div class="margintop120px"></div>
+  <!-- フッタ開始 -->
+  <footer id="footer">
+
+  <ul class="nl">
+    <li class="first"><a href="#">会社情報</a></li>
+    <li><a href="/rule">利用規約</a></li>
+    <li><a href="/privacy">プライバシーポリシー</a></li>
+  </ul>
+
+  <ul class="nl guide">
+    <li><a href="/transaction_row">特定商取引に基づく表記</a></li>
+    <li class="#"><a href="/question">よくある質問</a></li>
+    <li><a href="/contact">お問い合わせ</a></li>
+    <!--<li><a href="#">アクセス</a></li>-->
+  </ul>
+
+  <address>
+    Copyright (C) 2017 JIHANKI. All Rights Reserved.
+  </address>
+
+  <!-- フッタ終了 -->
+  </footer>
+
+  <script>
+    $(function(){
+      $(".menu").click(function(){
+        $(".menu1").toggleClass("menuclick1")
+      });
+      $(".menu").click(function(){
+        $(".menu2").toggleClass("menuclick2")
+      });
+      $(".menu").click(function(){
+        $(".menu3").toggleClass("menuclick3")
+      }); 
+    });
+  </script>
+
+  <script>
+    $(function($){
+			$('.menu').click(function(){
+   		  if ($('#menu').css('display') == 'none') {
+          $('#menu').slideDown('fast');
+    		} else {
+       	  $('#menu').slideUp('fast');
+   			}
+			});
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<div id="header">-->
+  <!--  <h1>-->
+  <!--    <a href="/">-->
+  <!--      <div class="type-textbound">-->
+  <!--        JIHANKI-->
+  <!--      </div>-->
+  <!--    </a>-->
+  <!--  </h1>-->
+  
+    <!--ログイン時-->
+    <!--<% if current_user %>-->
+    <!--  <nav class="menu clearfix">-->
+    <!--    <div class="menu1"></div>-->
+    <!--    <div class="menu2"></div>-->
+    <!--    <div class="menu3"></div>-->
+    <!--  </nav>-->
+  
+    <!--  <ul id="menu">-->
+    <!--    <li class="first"><a href="#"><span class="fa fa-file-image-o"></span>会社情報</a></li>-->
+    <!--    <li><a href="/about"><span class="fa fa-question-circle-o"></span>JIHANKIとは</a></li>-->
+    <!--    <li><a href="/news"><span class="fa fa-newspaper-o"></span>ニュース</a></li>-->
+    <!--    <li><a href="/items/index"><span class="fa fa-check"></span>取り扱い商品一覧</a></li>-->
+    <!--    <li><a href="/carts/show"><span class="fa fa-cart-arrow-down"></span>カート</a></li>-->
+    <!--    <li><a href="/orders/<%= current_user.id %>/index"><span class="fa fa-clock-o"></span>注文履歴</a></li>-->
+    <!--    <li><a href="/users/<%= current_user.id %>"><span class="fa fa-user-o"></span>マイページ</a></li>-->
+    <!--    <li><a href="/users/edit"><span class="fa fa-refresh"></span>ユーザー情報変更</a></li>-->
+    <!--    <li><a href="/users/<%= current_user.id %>/destroy"><span class="fa fa-times-rectangle"></span>ユーザー情報削除</a></li>-->
+    <!--    <li><span class="fa fa-mail-reply-all"></span><%= link_to("ログアウト", "/users/sign_out", {method: "delete"}) %></li>-->
+    <!--  </ul>-->
+      
+    <!--  <div class="table">-->
+    <!--    <div class="table_1">-->
+    <!--      <li><a href="/about"><span class="fa fa-question-circle-o fa-2x"></span><br>JIHANKIとは</a></li>-->
+    <!--    </div>-->
+      <!--  <div class="table_2">-->
+      <!--    <li><a href="/news"><span class="fa fa-newspaper-o fa-2x"></span><br>ニュース</a></li>-->
+      <!--  </div>-->
+      <!--  <div class="table_3">  -->
+      <!--    <li><a href="/items/index"><span class="fa fa-check fa-2x"></span><br>取り扱い商品一覧</a></li>-->
+      <!--  </div>-->
+      <!--  <div class="table_4">-->
+      <!--    <li><a href="/users/<%= current_user.id %>"><span class="fa fa-user-o fa-2x"></span><br>マイページ</a></li>-->
+      <!--  </div>-->
+      <!--  <div class="table_5">-->
+      <!--    <a href="/carts/show"><span class="fa fa-cart-arrow-down fa-2x"></span><br>カート</a>-->
+      <!--  </div>-->
+      <!--  <div class="table_6">-->
+      <!--    <span class="fa fa-mail-reply-all fa-2x"></span><br> <%= link_to("ログアウト", "/users/sign_out", {method: "delete"}) %>-->
+      <!--  </div>-->
+        
+      <!--  <nav class="menu clearfix">-->
+      <!--    <div class="menu1"></div>-->
+      <!--    <div class="menu2"></div>-->
+      <!--    <div class="menu3"></div>-->
+      <!--  </nav>-->
+      <!--</div>-->
+  
+    <!--ログアウト時-->
+  <!--  <% else %>-->
+  <!--    <ul id="menu">-->
+  <!--      <li class="first"><a href="#"><span class="fa fa-file-image-o"></span>会社情報</a></li>-->
+  <!--      <li><a href="/about"><span class="fa fa-question-circle-o"></span>JIHANKIとは</a></li>-->
+  <!--      <li><a href="/news"><span class="fa fa-newspaper-o"></span>ニュース</a></li>-->
+  <!--      <li><a href="/items/index"><span class="fa fa-check"></span>取り扱い商品一覧</a></li>-->
+  <!--      <li><a href="/users/sign_in"><span class="fa fa-key"></span>ログイン</a></li>-->
+  <!--      <li><a href="/users/sign_up"><span class="fa fa-coffee"></span>新規登録</a></li>-->
+  <!--    </ul>-->
+        
+  <!--    <div class="table">-->
+  <!--      <div class="log_btn">-->
+  <!--        <a href="/users/sign_in"><span class="fa fa-key fa-2x"></span><br>ログイン</a>-->
+  <!--      </div>-->
+  <!--      <div class="signup_btn">-->
+  <!--        <a href="/users/sign_up"><span class="fa fa-coffee fa-2x"></span><br>新規登録</a>-->
+  <!--      </div>-->
+  <!--      <div class="news_pr">-->
+  <!--        <a href="/news"><span class="fa fa-newspaper-o fa-2x"></span><br>ニュース</a>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  <% end %>-->
+    
+  <!--  <nav class="menu clearfix">-->
+  <!--    <div class="menu1"></div>-->
+  <!--    <div class="menu2"></div>-->
+  <!--    <div class="menu3"></div>-->
+  <!--  </nav>-->
+  <!--</div>-->

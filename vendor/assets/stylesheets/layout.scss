@@ -1,0 +1,62 @@
+$notice_green: #9bc53d;
+$alert_red: #e55934;
+$bg_orange: #fa7921;
+$bg_orange_hover: #fba163;
+$accent_yellow: #fde74c;
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.notice, .alert {
+  border-bottom: .2em solid white;
+  color: white;
+  font-family: 'ヒラギノ角ゴ StdN',
+               'Hiragino Kaku Gothic StdN',
+               'Hiragino Kaku Gothic ProN',
+               'ヒラギノ角ゴ ProN W3',
+               'メイリオ',
+               'Meiryo',
+               sans-serif;  
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  text-shadow:  1px    0 0 black,
+                0    1px 0 black,
+                0   -1px 0 black,
+               -1px    0 0 black,
+               -1px  1px 0 black,
+                1px -1px 0 black,
+               -1px -1px 0 black;
+  margin: 0 auto;
+}
+
+.notice {
+  background-color: $notice_green;
+}
+
+.alert {
+  background-color: $alert_red;
+}

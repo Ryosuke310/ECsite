@@ -1,0 +1,35 @@
+<div class="margintop30px"></div>
+
+<h2><a href="/"><img src="/logo.png"></a></h2>
+<div class="margintop20px"></div>
+
+<div class="steps">
+  <div class="step1">
+    <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x step"></i>
+				<i class="fa fa-inverse fa-stack-1x">1</i>
+		</span>
+		登録内容を入力
+	</div>
+  <div class="step2">
+    <span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x step now"></i>
+			<i class="fa fa-inverse fa-stack-1x">2</i>
+		</span>
+		確認メールを送信
+  </div>
+  <div class="step3">
+    <span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x step"></i>
+			<i class="fa fa-inverse fa-stack-1x">3</i>
+		</span>
+		登録完了
+  </div>
+</div>
+
+<div class="sign_up_2_message">
+	<p>確認メールを登録されたメールアドレス宛に送信しました。<br>
+	しばらく経ってもメールが届かない場合は、お手数ですが
+	<%= link_to("こちら", new_user_confirmation_path(current_user)) %>
+	から確認メールを再送してください。</p>
+</div>

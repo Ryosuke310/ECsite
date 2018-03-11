@@ -1,0 +1,63 @@
+<div class="icon_center"><i class="fa fa-handshake-o fa-4x"></i></div>
+
+<h1>注文を確認する</h1>
+<% total = 0 %>
+<div class="top40px"></div>
+<h1>注文内容</h1>
+<% @cart_items.each do |cart_item| %>
+<div class="top80px"></div>
+<div class="center">
+
+<section class="card">
+  <img class="card-img" src="/item_eyecatch_image/<%= cart_item.item.eyecatch_image_name %>" width="100%" alt="">
+      <div class="card-content">
+        <h1 class="card-title"><%= cart_item.item.name %></h1>
+        <!--<p class="card-text">青島みかんを使用することで味に独特のコクを出しとても甘みが強いことが特徴のみかんジュース</p>-->
+      </div>
+      
+      <div class="card-link">
+        <a href="#">数量：<%= cart_item.quantity %></a>
+        <a href="#">単価：<%= cart_item.item.price %></a>
+        <% sub_total = cart_item.quantity * cart_item.item.price %>
+        <a href="#">小計：<%= sub_total %></a>
+        <% total += sub_total %>
+
+      </div>
+</section>
+<% end %>
+</div>
+
+<div class="icon_center">合計金額 <%= total %> 円</div>
+
+<div class="margintop80px"></div>
+<div class="icon_center">
+		<h2>お届け先情報</h2>
+		
+		<div class="margintop80px"></div>
+		<table class="type02">
+			<tr>
+				<th scope="row">お名前</th>
+				<td> <%= @current_user.name %></td>
+			</tr>
+			<tr>
+				<th scope="row">郵便番号 </th>
+				<td><%= @current_user.postal_code%></td>
+			</tr>
+			<tr>
+				<th scope="row">住所 </th>
+				<td> <%= @current_user.address %></td>
+			</tr>
+				<tr>
+				<th scope="row">電話番号 </th>
+				<td>  <%= @current_user.phone_number %></td>
+			</tr>
+				<tr>
+				<th scope="row">メールアドレス </th>
+				<td><%= @current_user.email %></td>
+			</tr>
+		</table>
+</div>		
+		<div class="margintop60px"></div>
+		<div class="buy_btn2">
+		    <%= link_to("注文を確定する", "/orders/create", {method: "post"}) %>
+		</div>

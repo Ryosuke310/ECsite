@@ -1,0 +1,18 @@
+<div class="margintop30px"></div>
+
+<h2><a href="/"><img src="/logo.png"></a></h2>
+<div class="margintop20px"></div>
+
+<div class="margin">
+  <h2>マイページ</h2>
+  <div class="margintop60px"></div>
+  <ul id="mypage_layout">
+    <li class="mypage"><a href="/users/<%= current_user.id %>"><i class="fa fa-address-book-o fa-4x"></i><br>会員情報</a></li>
+    <li class="mypage"><a href="/users/edit"><i class="fa fa-pencil-square-o fa-4x"></i><br>会員情報の編集</a></li>
+    <li class="mypage"><a href="/users/edit"><i class="fa fa-times fa-4x"></i><br>会員情報の削除</a></li>
+    <li class="mypage"><a href="/orders/<%= current_user.id %>/index"><i class="fa fa-clock-o fa-4x"></i><br>購入履歴</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</div>
+
+<div class="margintop120px"></div>

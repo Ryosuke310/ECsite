@@ -1,0 +1,21 @@
+<div class="margintop30px"></div>
+
+<h2><a href="/"><img src="/logo.png"></a></h2>
+<div class="margintop20px"></div>
+
+<h2>マイページ</h2>
+
+<div class="center">
+  <section class="card">
+    <div class="card-content">
+      <p class="card-text"> お名前；<%= @user.name  %>さん<br></p>
+      <p class="card-text"> 郵便番号；<%= @user.postal_code  %><br></p>
+      <p class="card-text"> 住所；<%= @user.address  %><br></p>
+    </div>
+        
+    <div class="card-link">
+      <a href="#"><span style="font-size:80%;"><%= link_to("ユーザー情報変更","/users/#{@current_user.id}/edit") %></a></span>
+      <a href="#"><span style="font-size:120%;"><%= link_to("ユーザー情報削除","/users/#{@current_user.id}/destroy") %></a></span>
+    </div>
+  </section>
+</div>

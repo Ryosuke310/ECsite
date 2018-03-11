@@ -1,0 +1,450 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 
+
+@font-face {
+      font-family: 'tegaki';
+      src: url("/ShigotoMemogaki-Regular-1-01.ttf") format('opentype');
+       }
+
+.info{
+    display:inline-block;
+}
+.clear {
+	clear:both;
+}
+
+.buy_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin-bottom:30px;
+    border-radius: 10px;        /* CSS3草案 */  
+  -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 10px;   /* Firefox用 */ 
+}
+.buy_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+.buy_btn a{
+  color:white;
+}
+.buy_btn2{
+    display: table;
+    margin:auto;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin-bottom:30px;
+    border-radius: 10px;        /* CSS3草案 */  
+  -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+  -moz-border-radius: 10px;   /* Firefox用 */ 
+}
+.buy_btn2 a{
+  color:white;
+}
+.buy_btn2:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/1.7 'Patua One', arial, helvetica, sans-serif;
+    color: #594433;
+    text-align: center;
+}
+a {
+    color: #333;
+}
+a:hover {
+    color: #a70f00;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 62px;
+    margin-bottom: 20px;
+    color: #594433;
+    letter-spacing: 0.03em;
+}
+h2 {
+    font-size: 40px;
+    letter-spacing: 0.06em;
+}
+.item_name{
+  font-size:210%;
+  margin-bottom:20px;
+}
+
+
+
+#section-title {
+    font-size: 16px;
+    color: #594433;
+    padding-top: 80px;
+}
+
+
+footer {
+    padding-bottom: 60px;
+}
+.inner_slanting {
+    height: 300px;
+}
+
+// カート
+.cartBox{
+  display:inline-block;
+  margin:0 auto;
+  height:40px;
+}
+.detail_title{
+  font-size:150%;
+  font-weight: bold;
+  border-bottom: dotted 1px;
+  margin:0 30% 0 30%;
+}
+.main_content{
+  margin: 20px 5% 0 5%;
+  padding: 0 5% 20px 5%;
+  font-size: 12px;
+  border-bottom: #ccc dotted 1px;
+}
+.main_comment{
+  margin-top:10px;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+.pay dd{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: inline;
+}
+#price02_default{
+  font-size:180%;
+}
+.cartBox{
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.cart_area{
+  margin: 0;
+  background: #000;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 0 60px 0 60px;
+  font-size: 14px;
+  height: 40px;
+  float: left;
+  border-right: #ccc solid 1px;
+}
+.quantity{
+  padding: 0;
+  float: left;
+  text-align: left;
+  color: #fff;
+  box-sizing: border-box;
+  border-right: #ccc solid 1px;
+  width: 100px;
+  overflow: hidden; 
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+label{
+    cursor: default;
+}
+select{
+  border: none;
+  padding: 0 30px 0 10px;
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  box-sizing: border-box;
+  background-image: url(image/select_ar_w.svg);
+  background-repeat: no-repeat;
+  background-position: 22% 50%;
+  position: absolute;
+  width: 140%;
+  font-size:120%;
+}
+option{
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.cartin_btn{
+    text-align: center;
+    margin: 0 0 0 100px;
+    height:40px;
+}
+.cartbtn_default a{
+    background: #000;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 0 30%;
+    display: block;
+    cursor: pointer;
+    font-size: 13px;
+    text-align:center;
+    font-size:120%;
+}
+.fa-shopping-cart{
+  color:white;
+}
+.attention{
+  line-height: 40px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+}
+
+// 修正版
+@media screen and (min-width:480px)
+{
+  .margin2{
+    margin-left:0;
+    margin-right:0;
+  }
+}
+@media screen and (min-width:1025px)
+{
+  .margin2{
+    margin-left:10%;
+    margin-right:10%;
+  }
+}
+
+.landingblock{
+  padding: 64px 0;
+  margin: 0;
+  background: #f0eee2;
+}
+
+.wrap_items{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+.wrap_items{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+
+.item_show{
+  
+}
+
+.item_show_li{
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+}
+.Pt{
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  border-color: #000 transparent transparent transparent;
+  color: #000;
+  font-family: Georgia, Times New Roman, Times, serif;
+  z-index: 200;
+}
+.block {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.textBox{
+  margin: 0;
+  padding: 70px 50px;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+.table{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.tableCell{
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+}
+.tableCell h2{
+  font-size:220%;
+  font-family:"tegaki";
+}
+.tableCell p{
+  text-align:left;
+  font-family:"tegaki";
+  font-weight:bold;
+  font-size:130%;
+}
+@media screen and (min-width:480px)
+{
+  .block{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (min-width:1025px)
+{
+  .block{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+  }
+}
+
+.thumb{
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+@media screen and (min-width:480px)
+{
+  .thumb img{
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (min-width:1025px)
+{
+  .thumb img{
+    width: 100%;
+    height: 450px;
+  }
+}
+
+.pc{
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+}
+
+
+// スライダー
+@media screen and (min-width:480px)
+{
+  .slider-container.initialized{
+    padding:0 0;
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    height:auto;
+  }
+}
+@media screen and (min-width:1025px)
+{
+  .slider-container.initialized{
+    padding:0 10%;
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    height:auto;
+  }
+}
+
+
+.slider-container, .slider-nav-container {
+  display: none;
+  position: relative;
+}
+.slider-container.initialized, .slider-nav-container.initialized {
+  display: block;
+}
+.slider-nav-container {
+  margin-top: 18px;
+}
+.slider {
+  overflow: hidden;
+}
+.slider-nav {
+  margin: 0 26px;
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  height: 36px;
+  margin-top: -18px;  /* 高さの半分だけネガティブマージン */
+  color: #aaa;
+  line-height: 36px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;  /* 重要 */
+}
+.slider-prev {
+  left: 0;
+}
+.slider-next {
+  right: 0;
+}
+.slick-slide {
+  outline: 0;
+}
+.slider .slick-slide > img, .slider-nav .slick-slide > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

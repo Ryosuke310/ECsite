@@ -1,0 +1,26 @@
+$notice_green: #9bc53d;
+$alert_red: #e55934;
+$bg_orange: #fa7921;
+$bg_orange_hover: #fba163;
+$accent_yellow: #fde74c;
+
+.main-title {
+  color: $bg_orange;
+  font-family: 'ヒラギノ角ゴ StdN',
+               'Hiragino Kaku Gothic StdN',
+               'Hiragino Kaku Gothic ProN',
+               'ヒラギノ角ゴ ProN W3',
+               'メイリオ',
+               'Meiryo',
+               sans-serif;
+  margin: 1em 0;
+  text-align: center;
+  text-shadow:  1px    0 0 white,
+                0    1px 0 white,
+                0   -1px 0 white,
+               -1px    0 0 white,
+               -1px  1px 0 white,
+                1px -1px 0 white,
+               -1px -1px 0 white;
+}
+

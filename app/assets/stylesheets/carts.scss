@@ -1,0 +1,79 @@
+// Place all the styles related to the carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cart_wrapper {
+  display: inline-block;
+  position: relative;
+  .items_in_cart {
+    display: inline-block;
+    table {
+      border: none;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 0 auto;
+      thead {
+        tr {
+          background: #dbdbdb;
+          th {
+            padding: 1em 2em;
+            text-align: center;
+          }
+          th:first-child {
+            text-align: left;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px #bdbdbd solid;
+          td {
+            padding: 1em 2em;
+            text-align: center;
+            select {
+              background: #fff;
+              color: #000;
+              position: relative;
+              width: 50px;
+            }
+            a {
+              color: #0bd;
+            }
+          }
+          td:nth-child(2) {
+            text-align: left;
+          }
+        }
+      }
+      tfoot {
+        tr {
+          td{
+            padding: 1em 2em;
+          }
+        }
+        tr:last-child {
+          border-top: 2px solid #000;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    right: 0;
+    button {
+      background: #4caf50;
+      border: 0;
+      color: #fff;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 1em;
+      padding: .8em 1.2em;
+      width: 200px;
+    }
+    button:hover {
+      background: #43a047;
+    }
+  }
+}

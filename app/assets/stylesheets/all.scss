@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require swiper
+ *= require slick
+ *= require slick-theme
+ */
+ 
+@media screen and (min-width:480px)
+{
+  *{
+   color:#000;
+  }
+}
+@media screen and (min-width:1025px)
+{
+  *{
+  	color:#696969;
+  }
+}
+ body{
+ // background-color:#babea5;
+}
+ a{
+ text-decoration:none;
+}
+
+li{
+ list-style:none;
+}
+p{
+ line-height : 150%;
+}
+.clearfix:after{
+ content:"";
+ display:block;
+ clear:both;
+}
+.textleft{
+ text-align:left;
+}
+.margin{
+ margin-left:10%;
+ margin-right:10%;
+}
+.icon_center{
+    margin-top:-100px;
+    display:table;
+    margin:0 auto;
+}
+.contents_left{
+ margin:0 5%;
+ text-align:left;
+}
+
+
+/*マージン設定*/
+.margintop10px{
+ margin-top: 10px;
+}
+.margintop20px{
+ margin-top: 20px;
+}
+.margintop30px{
+ margin-top: 30px;
+}
+.margintop40px{
+ margin-top: 40px;
+}
+.margintop50px{
+ margin-top: 50px;
+}
+.margintop60px{
+ margin-top: 60px;
+}
+.margintop70px{
+ margin-top: 60px;
+}
+.margintop80px{
+ margin-top: 80px;
+}
+.margintop120px{
+ margin-top: 120px;
+}
+/*マージン設定終わり*/
+
+
+.notice, 
+.alert {
+ margin: 2em 0;
+}

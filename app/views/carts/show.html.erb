@@ -1,0 +1,119 @@
+<div class="margintop30px"></div>
+
+<h2><a href="/"><img src="/logo.png"></a></h2>
+<div class="margintop20px"></div>
+<h2>カートに追加されている商品</h2>
+
+<div class="icon_center">
+  <i class="fa fa-cart-arrow-down fa-4x"></i>
+</div>
+
+
+<% if @cart_items.blank? %>
+  <div class="cart_type">
+    <p>カート内に追加されている商品はありません。</p>
+  </div>
+
+<% else %>
+  <div class="cart_type">
+    <p>カート内の商品</p>
+  </div>
+  
+  <div class="top80px">
+  </div>
+  
+  <div class="cart_wrapper">
+    <div class="items_in_cart">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2" align="left">商品名</th>
+            <th>値段</th>
+            <th>個数</th>
+            <th>小計</th>
+          </tr>
+        </thead>
+        <% total = 0 %>
+        <% i = 0 %>
+        <% @cart_items.each do |cart_item| %>
+          <% item = cart_item.item %>
+          <tbody>
+            <tr>
+              <td><%= image_tag("/item_eyecatch_image/#{item.eyecatch_image_name}", size: "180x120")%></td>
+              <td><%= item.name %></td>
+              <td>
+                ¥<span id="price<%= i %>"><%= item.price %>
+                </span>
+              </td>
+              <td>
+                <%= select_tag("item[show]#{i}", options_for_select(0..99, selected: cart_item.quantity)) %>
+                <br>
+                <%= link_to("削除", "/carts/#{item.id}/remove_item", {method: "post"}) %>
+              </td>
+              <td>
+                ¥<span id="subtotal<%= i %>">
+                  <%= subtotal = item.price * cart_item.quantity %>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+          <% total += subtotal %>
+          <% i += 1 %>
+        <% end %>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">商品代金</td>
+            <td>
+              ¥<span id="total">
+                <%= total %>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">送料</td>
+            <td>¥<%= postage = 0 %></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2">合計</td>
+            <td>
+              ¥<span id="total_and_postage">
+                <%= total + postage %>
+              </span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <form action="/orders/new" method="get">
+      <div class="buttons">
+        <button class="comfirm_order_button" type="submit" name="quantity" value="1">購入内容を確認する</button>
+      </div>
+    </form>
+  </div>
+<% end %>
+
+<script>
+  $(function() {
+    var max = <%= i %>;
+    console.log(max);
+    <% for j in 0..i do %>
+      $('#item_show<%= j %>').change(function() {
+        var quantity = $(this).val();
+        var before_subtotal = $('#subtotal<%= j %>').text();
+        var after_subtotal = $('#price<%= j %>').text() * quantity;
+        var diff = after_subtotal - before_subtotal;
+        $('#subtotal<%= j %>').text(after_subtotal);
+        var before_total = $('#total').text();
+        var after_total = parseInt(before_total) + parseInt(diff);
+        $('#total').text(after_total);
+        var before_total_and_postage = $('#total_and_postage').text();
+        var after_total_and_postage = parseInt(before_total_and_postage) + parseInt(diff);
+        $('#total_and_postage').text(after_total_and_postage);
+      });
+    <% end %>
+  });
+</script>

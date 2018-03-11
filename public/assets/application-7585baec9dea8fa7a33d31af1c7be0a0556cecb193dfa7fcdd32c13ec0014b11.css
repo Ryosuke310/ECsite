@@ -1,0 +1,3157 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+ */
+
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.cart_type {
+  display: table;
+  margin: 10px auto;
+}
+
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: 200px;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-img2 {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: 200px;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-content {
+  padding: 20px;
+}
+
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+/* line 42, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+  font-size: 80%;
+}
+
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.card-link a:hover {
+  color: #0090aa;
+}
+
+/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/cardlayouts.scss */
+.center:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.cart_wrapper {
+  display: inline-block;
+  position: relative; }
+  .cart_wrapper .items_in_cart {
+    display: inline-block; }
+    .cart_wrapper .items_in_cart table {
+      border: none;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 0 auto; }
+      .cart_wrapper .items_in_cart table thead tr {
+        background: #dbdbdb; }
+        .cart_wrapper .items_in_cart table thead tr th {
+          padding: 1em 2em;
+          text-align: right; }
+        .cart_wrapper .items_in_cart table thead tr th:first-child {
+          text-align: left; }
+      .cart_wrapper .items_in_cart table tbody tr {
+        border-bottom: 1px #bdbdbd solid; }
+        .cart_wrapper .items_in_cart table tbody tr td {
+          padding: 1em 2em;
+          text-align: right; }
+          .cart_wrapper .items_in_cart table tbody tr td a {
+            color: #0bd; }
+        .cart_wrapper .items_in_cart table tbody tr td:nth-child(2) {
+          text-align: left; }
+      .cart_wrapper .items_in_cart table tfoot tr td {
+        padding: 1em 2em; }
+      .cart_wrapper .items_in_cart table tfoot tr:last-child {
+        border-top: 2px solid #000;
+        font-weight: bold; }
+  .cart_wrapper .buttons {
+    position: absolute;
+    right: 0; }
+    .cart_wrapper .buttons button {
+      background: #4caf50;
+      border: 0;
+      color: #fff;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 1em;
+      padding: .8em 1.2em;
+      width: 200px; }
+
+/*# sourceMappingURL=carts.css.map */
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper {
+  display: inline-block;
+  position: relative;
+}
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart {
+  display: inline-block;
+}
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table thead tr {
+  background: #dbdbdb;
+}
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table thead tr th {
+  padding: 1em 2em;
+  text-align: right;
+}
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table thead tr th:first-child {
+  text-align: left;
+}
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tbody tr {
+  border-bottom: 1px #bdbdbd solid;
+}
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tbody tr td {
+  padding: 1em 2em;
+  text-align: right;
+}
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tbody tr td a {
+  color: pink;
+}
+/* line 37, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tfoot tr td {
+  padding: 1em 2em;
+}
+/* line 48, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .items_in_cart table tfoot tr:last-child {
+  border-top: 2px solid #000;
+  font-weight: bold;
+}
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .buttons {
+  position: absolute;
+  right: 0;
+}
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .buttons button {
+  background: #4caf50;
+  border: 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em;
+  padding: .8em 1.2em;
+  width: 200px;
+}
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/carts.scss */
+.cart_wrapper .buttons button:hover {
+  background: #43a047;
+}
+@charset "UTF-8";
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer {
+  padding: 15px 0 20px;
+  /* フッタのパディング（上、左右、下） */
+  border-top: 1px #c0c0c0 solid;
+  /* フッタの上境界線 */
+  color: #696969;
+}
+
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer a {
+  color: #696969;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer a:hover {
+  color: black;
+}
+
+/* --- フッタメニュー --- */
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer ul.nl {
+  margin: 0 0 10px;
+  /* フッタメニューのマージン（上、左右、下） */
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* --- メニュー項目 --- */
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer ul.nl li {
+  padding: 0 4px 0 8px;
+  /* 項目のパディング（上右下左） */
+  display: inline;
+}
+
+/* 最初の項目 */
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer ul.nl li.first {
+  background-image: none;
+  /* 区切り線なし */
+}
+
+/* ガイドメニュー */
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer ul.guide {
+  margin: 0 0 15px;
+  /* ガイドメニューのマージン（上書き） */
+}
+
+/* --- アドレス・コピーライト --- */
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/footer.scss */
+#footer address {
+  font-style: normal;
+  /* 文字のスタイル（ノーマル） */
+  text-align: center;
+  line-height: 140%;
+  /* 行の高さ */
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.steps {
+  margin: 2em auto;
+  width: 720px;
+}
+/* line 4, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.steps .step1,
+.steps .step2,
+.steps .step3 {
+  display: inline-block;
+  padding: 0 2em 0 0;
+  text-align: left;
+}
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.steps .step1 span,
+.steps .step2 span,
+.steps .step3 span {
+  font-size: 2.5em;
+}
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.steps .step1 span .step,
+.steps .step2 span .step,
+.steps .step3 span .step {
+  color: #43a047;
+  opacity: .4;
+}
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.steps .step1 span .now,
+.steps .step2 span .now,
+.steps .step3 span .now {
+  opacity: 1;
+}
+
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user {
+  width: 720px;
+}
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user #error_explanation h2 {
+  background: pink;
+  font-size: 1.5em;
+  padding: .8em 3em;
+  text-align: left;
+}
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user #error_explanation ul {
+  background: pink;
+  margin: 0 0 2em;
+  padding: 0 5em 1em;
+  text-align: left;
+}
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .sub_container1,
+.sign_up_form_container #new_user .sub_container2 {
+  display: inline-block;
+  padding: 2em 0;
+  vertical-align: top;
+  width: 48%;
+}
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .sub_container1 .field {
+  padding: 0 1.5em 0 3em;
+}
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .sub_container2 .field,
+.sign_up_form_container #new_user .sub_container2 .actions {
+  padding: 0 3em 0 1.5em;
+}
+
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_in_form_container #new_user {
+  padding: 2em 0 0 0;
+  width: 400px;
+}
+
+/* line 65, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container img,
+.sign_in_form_container img {
+  margin: 1em auto;
+}
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user,
+.sign_in_form_container #new_user {
+  margin: 1em auto;
+}
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .field,
+.sign_in_form_container #new_user .field {
+  padding: 0 3em;
+  text-align: left;
+}
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .field .field_with_errors:first-child,
+.sign_in_form_container #new_user .field .field_with_errors:first-child {
+  display: inline;
+}
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .field input[type="text"],
+.sign_up_form_container #new_user .field input[type="email"],
+.sign_up_form_container #new_user .field input[type="password"],
+.sign_in_form_container #new_user .field input[type="text"],
+.sign_in_form_container #new_user .field input[type="email"],
+.sign_in_form_container #new_user .field input[type="password"] {
+  background: #f2f2f2;
+  border: 0;
+  font-size: 1em;
+  height: 3em;
+  margin: .5em 0 1em;
+  padding: .7em;
+  width: 100%;
+}
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .field input[type="text"]:focus,
+.sign_up_form_container #new_user .field input[type="email"]:focus,
+.sign_up_form_container #new_user .field input[type="password"]:focus,
+.sign_up_form_container #new_user .field input[type="checkbox"]:focus,
+.sign_in_form_container #new_user .field input[type="text"]:focus,
+.sign_in_form_container #new_user .field input[type="email"]:focus,
+.sign_in_form_container #new_user .field input[type="password"]:focus,
+.sign_in_form_container #new_user .field input[type="checkbox"]:focus {
+  box-shadow: 0 0 5px #76b852;
+  outline: solid 2px #76b852;
+}
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .actions,
+.sign_in_form_container #new_user .actions {
+  padding: 0 3em;
+}
+/* line 97, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .actions input[type="submit"],
+.sign_in_form_container #new_user .actions input[type="submit"] {
+  background: #4caf50;
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 2em 0;
+  padding: .8em 0;
+  width: 100%;
+}
+/* line 106, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .actions input[type="submit"]:hover,
+.sign_up_form_container #new_user .actions input[type="submit"]:active,
+.sign_in_form_container #new_user .actions input[type="submit"]:hover,
+.sign_in_form_container #new_user .actions input[type="submit"]:active {
+  background: #43a047;
+}
+/* line 110, /home/ubuntu/workspace/app/assets/stylesheets/form.scss */
+.sign_up_form_container #new_user .actions input[type="submit"]:focus,
+.sign_in_form_container #new_user .actions input[type="submit"]:focus {
+  box-shadow: 0 0 5px #76b852;
+  outline: solid 2px #76b852;
+}
+/* line 2, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav.menu {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 135px;
+  right: 10%;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menu1 {
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  top: 0px;
+  position: absolute;
+}
+
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menu2 {
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  top: 13px;
+  position: absolute;
+}
+
+/* line 13, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menu3 {
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  top: 26px;
+  position: absolute;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menuclick1 {
+  top: 8px;
+  -o-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -webkit-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
+  transform: rotate(405deg);
+}
+
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menuclick2 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+nav .menuclick3 {
+  top: 8px;
+  -o-transform: rotate(-405deg);
+  -moz-transform: rotate(-405deg);
+  -webkit-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
+  transform: rotate(-405deg);
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/hamburger.scss */
+#menu {
+  position: fixed;
+  font-weight: bold;
+  display: none;
+  right: 10%;
+  top: 135px;
+  list-style-type: none;
+  background-color: white;
+  border: 2px solid #000;
+  padding: 20px 20px 0px 20px;
+  z-index: 9999;
+}
+/* line 2, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Oswald", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 27, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.row1 {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.content {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 2% 50px;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.main_header .row1 .content {
+  padding: 0;
+}
+
+/* line 45, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.dark {
+  background: #333;
+}
+
+/* line 46, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+#hero {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 57, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+#hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+#hero h1 span {
+  font-size: 25px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.main_header {
+  position: fixed;
+  top: 0px;
+  max-height: 90px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Oswald";
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 84, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  .main_header {
+    padding-top: 25px;
+  }
+}
+/* line 89, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.open-nav {
+  max-height: 400px !important;
+}
+
+/* line 92, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+}
+
+/* line 96, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid silver;
+}
+
+/* line 103, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.logo {
+  width: 200px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 116, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  .logo {
+    float: none;
+  }
+}
+/* line 121, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav {
+  float: right;
+  width: 70%;
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 126, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  nav {
+    width: 100%;
+  }
+}
+/* line 130, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 137, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  nav ul {
+    padding-top: 15px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* line 145, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  margin-top: 23px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 152, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 15px 0;
+  }
+}
+/* line 158, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav ul a {
+  color: #696969;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms linear;
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 171, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav ul a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 175, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+nav ul a.active {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  transition: all 500ms 100ms linear;
+}
+
+/* line 180, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+  /* line 191, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+  .mobile-toggle {
+    display: block;
+  }
+}
+/* line 195, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+/* line 203, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 13px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  bottom: 95px;
+  position: absolute;
+  left: 51%;
+  margin-left: -24px;
+}
+
+/* line 217, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid transparent;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+/* line 242, /home/ubuntu/workspace/app/assets/stylesheets/header.scss */
+.scrollup {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 100px;
+}
+@charset "UTF-8";
+@font-face {
+  font-family: 'kaisyotai';
+  src: url("/Kaiso-Next-B.otf") format("opentype");
+}
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pickup {
+  margin-bottom: 80px;
+}
+
+@font-face {
+  font-family: 'Sucrose Bold Two';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'IM Fell French Canon Pro';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2") format("woff2");
+}
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+body {
+  margin: 0;
+}
+
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+header {
+  width: 100%;
+  margin-top: -30px;
+  background: url(/osake5.png) no-repeat;
+  padding-top: 61.93333333%;
+  background-size: cover;
+  font-family: 'Sucrose Bold Two';
+  margin-bottom: -30px;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
+
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+header h2 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 15vw;
+  line-height: .8;
+  margin-top: 220px;
+  text-align: center;
+  color: #696969;
+}
+
+/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+header h2 span {
+  display: block;
+  font-size: 8.75vw;
+}
+
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+main {
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  margin-top: 30px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 66, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  main {
+    padding: 2rem;
+  }
+}
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.pickup {
+  margin-top: 50px;
+  font-size: 150%;
+  text-align: center;
+}
+
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+#mypage_layout {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 80, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.mypage {
+  text-align: center;
+  display: inline-block;
+  margin: 0 0 0 10%;
+}
+
+/* line 85, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.mypage:first-child {
+  margin-left: -5%;
+}
+
+/* line 88, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.baloon {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  width: auto;
+  min-width: 115px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  background-color: #009b85;
+  z-index: 0;
+}
+
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.baloon:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  margin-left: 0;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 20px 15px 0;
+  border-color: transparent #009b85 transparent transparent;
+  z-index: -1;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 119, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .contents01 {
+    position: relative;
+  }
+
+  /* line 122, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .mainimage {
+    width: 1000px;
+    height: auto;
+    z-index: 10;
+  }
+
+  /* line 127, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock {
+    font-size: 130%;
+    padding: 0 25%;
+    margin-bottom: 80px;
+    width: auto;
+    height: auto;
+    position: static;
+    background-color: white;
+    text-align: center;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", YuGothic, "Yu Gothic";
+  }
+
+  /* line 138, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock p {
+    color: black;
+  }
+
+  /* line 141, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .border {
+    margin-top: -1px;
+  }
+
+  /* line 144, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .border:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    margin-left: -75px;
+  }
+
+  /* line 154, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .readcontents {
+    text-align: left;
+    font-height: 300%;
+    font-family: 'kaisyotai';
+  }
+
+  /* line 160, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .read {
+    font-size: 80%;
+    font-weight: 900;
+  }
+
+  /* line 164, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items {
+    background: #183734;
+    height: 1000px;
+    width: 1000px;
+    padding-top: 80px;
+    margin-top: -20px;
+    z-index: 0;
+  }
+
+  /* line 172, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+  }
+
+  /* line 180, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li {
+    margin-bottom: 110px;
+    margin-right: 3%;
+    display: block;
+    float: left;
+    width: 45%;
+    height: 305px;
+    padding: 0;
+    color: white;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", YuGothic, "Yu Gothic";
+  }
+
+  /* line 191, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li:nth-child(odd) {
+    margin-left: 3.5%;
+  }
+
+  /* line 194, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li p {
+    font-weight: 900;
+    color: white;
+  }
+
+  /* line 198, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li img {
+    display: block;
+    width: 100%;
+    height: 305px;
+  }
+
+  /* line 203, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .contents02 {
+    position: relative;
+  }
+
+  /* line 206, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock2 {
+    font-size: 130%;
+    padding: 0 25%;
+    margin-bottom: 100px;
+    width: auto;
+    height: auto;
+    position: static;
+    background-color: white;
+    text-align: center;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", YuGothic, "Yu Gothic";
+  }
+
+  /* line 217, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock2 p {
+    color: black;
+  }
+
+  /* line 220, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .mainimage2 {
+    width: 1000px;
+    height: auto;
+  }
+
+  /* line 225, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .concept {
+    text-align: center;
+  }
+
+  /* line 228, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .concept h3 {
+    color: black;
+  }
+
+  /* line 231, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .concept p {
+    color: black;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 238, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .contents01 {
+    position: relative;
+  }
+
+  /* line 241, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .mainimage {
+    width: 1000px;
+    height: auto;
+  }
+
+  /* line 245, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock {
+    font-size: 100%;
+    padding: 20px 70px;
+    width: 470px;
+    height: 420px;
+    position: absolute;
+    top: 120px;
+    left: 72%;
+    margin-left: -235px;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+  }
+
+  /* line 258, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .border {
+    margin-top: -1px;
+  }
+
+  /* line 261, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .border:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    margin-left: -75px;
+  }
+
+  /* line 271, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .readcontents {
+    text-align: left;
+    font-family: 'kaisyotai';
+  }
+
+  /* line 275, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .read {
+    font-size: 80%;
+    font-weight: 900;
+  }
+
+  /* line 279, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items {
+    background: #183734;
+    height: 600px;
+    z-index: 10;
+    margin-top: -200px;
+    padding-top: 250px;
+    width: 100%;
+  }
+
+  /* line 287, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15%;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+  }
+
+  /* line 295, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li {
+    display: block;
+    float: left;
+    width: 23%;
+    height: 215px;
+    margin-right: 1%;
+    padding: 0;
+    color: white;
+  }
+
+  /* line 304, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li:nth-child(odd) {
+    margin-left: auto;
+  }
+
+  /* line 307, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li p {
+    color: white;
+  }
+
+  /* line 311, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_ul:first-child {
+    margin-left: 1%;
+  }
+
+  /* line 314, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .items_li img {
+    display: block;
+    width: 100%;
+    height: 215px;
+  }
+
+  /* line 319, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .contents02 {
+    position: relative;
+  }
+
+  /* line 322, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .titleblock2 {
+    font-size: 100%;
+    padding: 20px 70px;
+    width: 470px;
+    height: 420px;
+    position: absolute;
+    top: 150px;
+    left: 72%;
+    margin-left: -235px;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+  }
+
+  /* line 335, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .mainimage2 {
+    width: 1000px;
+    height: auto;
+  }
+
+  /* line 340, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+  .concept {
+    text-align: center;
+  }
+}
+@charset "UTF-8";
+@font-face {
+  font-family: 'tegaki';
+  src: url("/ShigotoMemogaki-Regular-1-01.ttf") format("opentype");
+}
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.info {
+  display: inline-block;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.clear {
+  clear: both;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  /*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /* CSS3草案 */
+  -webkit-border-radius: 10px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 10px;
+  /* Firefox用 */
+}
+
+/* line 32, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn:active {
+  /*ボタンを押したとき*/
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+/* line 38, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn a {
+  color: white;
+}
+
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn2 {
+  display: table;
+  margin: auto;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  /*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /* CSS3草案 */
+  -webkit-border-radius: 10px;
+  /* Safari,Google Chrome用 */
+  -moz-border-radius: 10px;
+  /* Firefox用 */
+}
+
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn2 a {
+  color: white;
+}
+
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.buy_btn2:active {
+  /*ボタンを押したとき*/
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  border-bottom: none;
+  /*線を消す*/
+}
+
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+body {
+  font: 14px/1.7 'Patua One', arial, helvetica, sans-serif;
+  color: #594433;
+  text-align: center;
+}
+
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+a {
+  color: #333;
+}
+
+/* line 80, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+a:hover {
+  color: #a70f00;
+  text-decoration: none;
+}
+
+/* line 85, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+h1 {
+  font-size: 62px;
+  margin-bottom: 20px;
+  color: #594433;
+  letter-spacing: 0.03em;
+}
+
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+h2 {
+  font-size: 40px;
+  letter-spacing: 0.06em;
+}
+
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.item_name {
+  font-size: 210%;
+  margin-bottom: 20px;
+}
+
+/* line 102, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+#section-title {
+  font-size: 16px;
+  color: #594433;
+  padding-top: 80px;
+}
+
+/* line 109, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+footer {
+  padding-bottom: 60px;
+}
+
+/* line 112, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.inner_slanting {
+  height: 300px;
+}
+
+/* line 117, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.cartBox {
+  display: inline-block;
+  margin: 0 auto;
+  height: 40px;
+}
+
+/* line 122, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.detail_title {
+  font-size: 150%;
+  font-weight: bold;
+  border-bottom: dotted 1px;
+  margin: 0 30% 0 30%;
+}
+
+/* line 128, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.main_content {
+  margin: 20px 5% 0 5%;
+  padding: 0 5% 20px 5%;
+  font-size: 12px;
+  border-bottom: #ccc dotted 1px;
+}
+
+/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.main_comment {
+  margin-top: 10px;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+/* line 139, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.pay dd {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: inline;
+}
+
+/* line 146, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+#price02_default {
+  font-size: 180%;
+}
+
+/* line 149, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.cartBox {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+/* line 154, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.cart_area {
+  margin: 0;
+  background: #000;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 0 60px 0 60px;
+  font-size: 14px;
+  height: 40px;
+  float: left;
+  border-right: #ccc solid 1px;
+}
+
+/* line 165, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.quantity {
+  padding: 0;
+  float: left;
+  text-align: left;
+  color: #fff;
+  box-sizing: border-box;
+  border-right: #ccc solid 1px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 178, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+label {
+  cursor: default;
+}
+
+/* line 181, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+select {
+  border: none;
+  padding: 0 30px 0 10px;
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  box-sizing: border-box;
+  background-image: url(image/select_ar_w.svg);
+  background-repeat: no-repeat;
+  background-position: 22% 50%;
+  position: absolute;
+  width: 140%;
+  font-size: 120%;
+}
+
+/* line 195, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+/* line 202, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.cartin_btn {
+  text-align: center;
+  margin: 0 0 0 100px;
+  height: 40px;
+}
+
+/* line 207, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.cartbtn_default a {
+  background: #000;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin: 0 0 0 30%;
+  display: block;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  font-size: 120%;
+}
+
+/* line 222, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.fa-shopping-cart {
+  color: white;
+}
+
+/* line 225, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.attention {
+  line-height: 40px;
+  text-align: left;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 235, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .margin2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 242, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .margin2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+/* line 248, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.landingblock {
+  padding: 64px 0;
+  margin: 0;
+  background: #f0eee2;
+}
+
+/* line 254, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.wrap_items {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* line 261, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.wrap_items {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* line 272, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.item_show_li {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+}
+
+/* line 281, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.Pt {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  border-color: #000 transparent transparent transparent;
+  color: #000;
+  font-family: Georgia, Times New Roman, Times, serif;
+  z-index: 200;
+}
+
+/* line 294, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.block {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 302, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.textBox {
+  margin: 0;
+  padding: 70px 50px;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* line 309, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 314, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.tableCell {
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+}
+
+/* line 321, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.tableCell h2 {
+  font-size: 220%;
+  font-family: "tegaki";
+}
+
+/* line 325, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.tableCell p {
+  text-align: left;
+  font-family: "tegaki";
+  font-weight: bold;
+  font-size: 130%;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 333, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .block {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 345, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .block {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+  }
+}
+/* line 356, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.thumb {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 363, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .thumb img {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 370, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .thumb img {
+    width: 100%;
+    height: 450px;
+  }
+}
+/* line 376, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.pc {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  /* line 390, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .slider-container.initialized {
+    padding: 0 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 400, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+  .slider-container.initialized {
+    padding: 0 10%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 410, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-container, .slider-nav-container {
+  display: none;
+  position: relative;
+}
+
+/* line 414, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-container.initialized, .slider-nav-container.initialized {
+  display: block;
+}
+
+/* line 417, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-nav-container {
+  margin-top: 18px;
+}
+
+/* line 420, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider {
+  overflow: hidden;
+}
+
+/* line 423, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-nav {
+  margin: 0 26px;
+}
+
+/* line 426, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  height: 36px;
+  margin-top: -18px;
+  /* 高さの半分だけネガティブマージン */
+  color: #aaa;
+  line-height: 36px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+  /* 重要 */
+}
+
+/* line 437, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-prev {
+  left: 0;
+}
+
+/* line 440, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider-next {
+  right: 0;
+}
+
+/* line 443, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slick-slide {
+  outline: 0;
+}
+
+/* line 446, /home/ubuntu/workspace/app/assets/stylesheets/items.scss */
+.slider .slick-slide > img, .slider-nav .slick-slide > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@charset"UTF-8";
+
+
+.timeline > li {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+.timeline-date {
+  width: 110px;
+  float: left;
+  margin-top: 20px;
+}
+.timeline-content {
+  width: 75%;
+  float: left;
+  border-left: 3px #e5e5d1 solid;
+  padding-left: 30px;
+}
+.timeline-content:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #6fc173;
+  position: absolute;
+  left: 106px;
+  top: 24px;
+  border-radius: 100%;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/tabletype02.scss */
+table.type02 {
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/tabletype02.scss */
+table.type02 th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  background: #eee;
+}
+
+/* line 20, /home/ubuntu/workspace/app/assets/stylesheets/tabletype02.scss */
+table.type02 td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/tabletype04.scss */
+table.type04 {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+}
+
+/* line 8, /home/ubuntu/workspace/app/assets/stylesheets/tabletype04.scss */
+table.type04 th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/tabletype04.scss */
+table.type04 td {
+  width: 200px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+h2 {
+  color: #696969;
+  text-align: center;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+#new_user {
+  background-color: white;
+  width: 300px;
+  box-shadow: 0px 0px 3px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.formm {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.flash_messe2 {
+  color: red;
+  display: table;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.new_formm {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 41, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+input[type="submit"] {
+  margin: 20px;
+  background-color: #32CD32;
+  color: white;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.back_white {
+  padding-top: 20px;
+  background-color: white;
+  width: 200px;
+  box-shadow: 0px 0px 3px;
+}
+
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.user_name {
+  margin-bottom: 30px;
+}
+
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* line 85, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-text {
+  color: #777;
+  line-height: 1.5;
+}
+
+/* line 90, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+
+/* line 100, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.card-link a:hover {
+  color: #0090aa;
+}
+
+/* line 103, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.center {
+  text-align: center;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+ */
+@media screen and (min-width: 480px) {
+  /* line 23, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+  * {
+    color: #000;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 29, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+  * {
+    color: #696969;
+  }
+}
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+li {
+  list-style: none;
+}
+
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+p {
+  line-height: 150%;
+}
+
+/* line 46, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 51, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.textleft {
+  text-align: left;
+}
+
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.icon_center {
+  margin-top: -100px;
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.contents_left {
+  margin: 0 5%;
+  text-align: left;
+}
+
+/*マージン設定*/
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop10px {
+  margin-top: 10px;
+}
+
+/* line 73, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop20px {
+  margin-top: 20px;
+}
+
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop30px {
+  margin-top: 30px;
+}
+
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop40px {
+  margin-top: 40px;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop50px {
+  margin-top: 50px;
+}
+
+/* line 85, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop60px {
+  margin-top: 60px;
+}
+
+/* line 88, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop70px {
+  margin-top: 60px;
+}
+
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop80px {
+  margin-top: 80px;
+}
+
+/* line 94, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.margintop120px {
+  margin-top: 120px;
+}
+
+/*マージン設定終わり*/
+/* line 100, /home/ubuntu/workspace/app/assets/stylesheets/all.scss */
+.notice,
+.alert {
+  margin: 2em 0;
+}
+/**
+ * Swiper 3.4.2
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * 
+ * http://www.idangero.us/swiper/
+ * 
+ * Copyright 2017, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Licensed under MIT
+ * 
+ * Released on: March 10, 2017
+ */
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+.swiper-container-no-flexbox .swiper-slide {
+  float: left;
+}
+.swiper-container-vertical > .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-container-multirow > .swiper-wrapper {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.swiper-container-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* Auto Height */
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-transition-property: -webkit-transform, height;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform, height;
+}
+/* a11y */
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
+/* Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  -moz-background-size: 27px 44px;
+  -webkit-background-size: 27px 44px;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  left: 10px;
+  right: auto;
+}
+.swiper-button-prev.swiper-button-black,
+.swiper-container-rtl .swiper-button-next.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  right: 10px;
+  left: auto;
+}
+.swiper-button-next.swiper-button-black,
+.swiper-container-rtl .swiper-button-prev.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+/* Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+/* Bullets */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+.swiper-pagination-white .swiper-pagination-bullet {
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007aff;
+}
+.swiper-pagination-white .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.swiper-pagination-black .swiper-pagination-bullet-active {
+  background: #000;
+}
+.swiper-container-vertical > .swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+  -moz-transform: translate3d(0px, -50%, 0);
+  -o-transform: translate(0px, -50%);
+  -ms-transform: translate3d(0px, -50%, 0);
+  transform: translate3d(0px, -50%, 0);
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 5px 0;
+  display: block;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+/* Progress */
+.swiper-pagination-progress {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+.swiper-pagination-progress .swiper-pagination-progressbar {
+  background: #007aff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+}
+.swiper-container-rtl .swiper-pagination-progress .swiper-pagination-progressbar {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+}
+.swiper-container-horizontal > .swiper-pagination-progress {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+.swiper-container-vertical > .swiper-pagination-progress {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.swiper-pagination-progress.swiper-pagination-white {
+  background: rgba(255, 255, 255, 0.5);
+}
+.swiper-pagination-progress.swiper-pagination-white .swiper-pagination-progressbar {
+  background: #fff;
+}
+.swiper-pagination-progress.swiper-pagination-black .swiper-pagination-progressbar {
+  background: #000;
+}
+/* 3D Container */
+.swiper-container-3d {
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+}
+.swiper-container-3d .swiper-wrapper,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-cube-shadow {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.swiper-container-3d .swiper-slide-shadow-left {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+.swiper-container-3d .swiper-slide-shadow-top {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+.swiper-container-3d .swiper-slide-shadow-bottom {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+/* Coverflow */
+.swiper-container-coverflow .swiper-wrapper,
+.swiper-container-flip .swiper-wrapper {
+  /* Windows 8 IE 10 fix */
+  -ms-perspective: 1200px;
+}
+/* Cube + Flip */
+.swiper-container-cube,
+.swiper-container-flip {
+  overflow: visible;
+}
+.swiper-container-cube .swiper-slide,
+.swiper-container-flip .swiper-slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+.swiper-container-cube .swiper-slide .swiper-slide,
+.swiper-container-flip .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active,
+.swiper-container-cube .swiper-slide-active .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+.swiper-container-cube .swiper-slide-shadow-top,
+.swiper-container-flip .swiper-slide-shadow-top,
+.swiper-container-cube .swiper-slide-shadow-bottom,
+.swiper-container-flip .swiper-slide-shadow-bottom,
+.swiper-container-cube .swiper-slide-shadow-left,
+.swiper-container-flip .swiper-slide-shadow-left,
+.swiper-container-cube .swiper-slide-shadow-right,
+.swiper-container-flip .swiper-slide-shadow-right {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* Cube */
+.swiper-container-cube .swiper-slide {
+  visibility: hidden;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-cube.swiper-container-rtl .swiper-slide {
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-next,
+.swiper-container-cube .swiper-slide-prev,
+.swiper-container-cube .swiper-slide-next + .swiper-slide {
+  pointer-events: auto;
+  visibility: visible;
+}
+.swiper-container-cube .swiper-cube-shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  z-index: 0;
+}
+/* Fade */
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg,
+.swiper-zoom-container > canvas {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* Scrollbar */
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.swiper-container-horizontal > .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 98%;
+}
+.swiper-container-vertical > .swiper-scrollbar {
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  z-index: 50;
+  width: 5px;
+  height: 98%;
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+/* Preloader */
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  -moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  animation: swiper-preloader-spin 1s steps(12, end) infinite;
+}
+.swiper-lazy-preloader:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-position: 50%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.swiper-lazy-preloader-white:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+@-webkit-keyframes swiper-preloader-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes swiper-preloader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Slider */
+/* line 4, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 29, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 34, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 43, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 49, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 55, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 59, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 63, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 67, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 70, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 73, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 79, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 83, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 87, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 91, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 97, /home/ubuntu/workspace/vendor/assets/slick/slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+@charset "UTF-8";
+/* Slider */
+/* line 45, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url(/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url(/fonts/slick.eot);
+  src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), url(/fonts/slick.woff) format("woff"), url(/fonts/slick.ttf) format("truetype"), url(/fonts/slick.svg#slick) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+/* line 63, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 81, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 85, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 89, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+/* line 92, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 103, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 105, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+/* line 109, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+/* line 111, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 117, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 119, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+/* line 123, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+/* line 125, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 133, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 137, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+/* line 146, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 154, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 166, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 168, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 172, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 189, /home/ubuntu/workspace/vendor/assets/slick/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+/* line 9, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 14, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper *:before, main .item_wrapper *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 21, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .row {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+/* line 27, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .row img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+/* line 35, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li {
+  float: left;
+  margin: 0 0.8771929825%;
+  overflow: hidden;
+}
+/* line 42, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery {
+  padding: 0 0 300px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 47, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul {
+  padding: 0;
+  position: relative;
+}
+/* line 51, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li {
+  margin-bottom: 20px;
+  width: 23.2456140351%;
+  position: relative;
+}
+/* line 59, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+/* line 68, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li a:before {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 40%;
+  left: 50%;
+  margin: -14px 0 0 -16px;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A) no-repeat;
+  content: "";
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 83, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li a:hover:before {
+  top: 50%;
+  opacity: 1;
+}
+/* line 88, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li a:after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 101, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .gallery ul li a:hover:after {
+  opacity: 1;
+}
+/* line 110, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background: #ffffff;
+  background-color: #fafafa;
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 127, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port img {
+  width: 50%;
+}
+/* line 131, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port .description {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+/* line 139, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port h1 {
+  font-size: 35px;
+  line-height: 2.3;
+  padding: 0;
+}
+/* line 145, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port > * {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+/* line 151, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 159, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/* line 166, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .close {
+  width: 21px;
+  height: 21px;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
+  position: absolute;
+  right: 10px;
+  top: -121px;
+  opacity: 1;
+  z-index: 1004;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 179, /home/ubuntu/workspace/vendor/assets/stylesheets/bottle_layout.scss */
+main .item_wrapper .item_open .close {
+  opacity: 1;
+  top: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,28 @@
+<h2>注文履歴</h2>
+
+<% if @orders.present? %>
+  <% @orders.each do |order| %>
+		<table class="type02">
+			<tr>
+				<th scope="row">注文日</th>
+				<td><%= order.created_at.strftime('%Y年%m月%d日 %H:%M:%S') %> </td>
+			</tr>
+			
+			<% order.order_details.each do |order_detail| %>
+				<% item = order_detail.item %>
+				<tr>
+					<th scope="row"> 商品名</th>
+					<td><%= item.name %> </td>
+				</tr>
+				<tr>
+					<th scope="row">数量</th>
+					<td><%= order_detail.quantity %></td>
+				</tr>
+				<div class="top40px">
+				</div>
+			<% end %>
+		</table>
+	<% end %>	
+<% else %>
+    <%= "過去の注文はありません。" %>
+<% end %>
